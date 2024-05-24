@@ -1,0 +1,129 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:'roboto', Verdana, Tahoma, sans-serif;
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('fonts/roboto-regular-webfont.woff2') format('woff2'),
+         url('fonts/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color:rgb(255, 248, 239);
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+#book-form {
+    width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.form {
+    margin-bottom: 20px;
+    background-color:white;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-row {
+    display: grid;
+    padding: 5px;
+}
+
+.form-row #read {
+    justify-self: start;
+}
+
+.form-row label {
+    font-size: 0.7em;
+}
+
+.form-row-button {
+    grid-column: 1 / 3;
+    display: grid;
+}
+
+#add-button {
+    width: 50%;
+    justify-self: center;
+}
+
+.form-row-button button {
+    margin-top: 5px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    padding: 0px 20px;
+}
+
+.form-row-button button:hover {
+    background-color: rgb(188, 214, 188);
+}
+
+
+
+#card-container {
+    width: 800px;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
+}
+
+.card {
+    background-color:white;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card button {
+    margin-right: 5px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    padding: 0px 20px;
+}
+
+.card button:hover {
+    background-color: rgb(214, 188, 188);
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 1em;
+
+}
+
+.card-author {
+    font-size: 0.8em;
+}
+
+.card-pages {
+    font-size: 0.8em;
+
+}
+
+.card-read {
+    font-size: 0.8em;
+}

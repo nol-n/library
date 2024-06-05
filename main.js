@@ -1,13 +1,16 @@
 const myLibrary = [];
 
-myLibrary.push({title: 'Example Book', author: 'Example Author', pages: '500', read: true})
+myLibrary.push({ title: 'Example Book', author: 'Example Author', pages: '500', read: true })
 
-function Book(title, author, pages, read) {
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.read = read;
-    this.info = function () {
+class Book {
+    constructor(title, author, pages, read) {
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.read = read;
+    }
+
+    info () {
         return `${title} by ${author}, ${pages} pages, ${read}`;
     }
 }
